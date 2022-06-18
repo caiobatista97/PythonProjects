@@ -1,6 +1,4 @@
-# Focus Group Data Analytics
-# Caio Batista
-# Last updated: 6/15/22
+# Last updated: 6/18/22
 
 # Start by installing the fpdf package on the terminal:
 # python -m pip install fpdf
@@ -13,7 +11,7 @@ from PIL import Image
 # The spreadsheet with all of the tabs
 # Note: make sure Excel file is saved as "Excel Workbook (*.xlsx)"
 doc_name = 'FC TEMPLATE FINAL.xlsx'
-path = '/Users/caiobatista/Documents/Programming/VSCode/Vela/Python Projects/'
+path = '/Users/caiobatista/Documents/Programming/VSCode/Python Projects/Excel to PDF/'
 analysis_sheet = pd.ExcelFile(path + doc_name)
 
 # Number of questions = number of tabs
@@ -106,7 +104,3 @@ for key, values in content.items():
 # Outputting the PDF file
 today_date = date.today().strftime("%m_%d_%y")
 pdf.output(path + '[REPORT]' + doc_name[:-5] + '.pdf')
-
-# https://medium.com/@theprasadpatil/how-to-create-a-pdf-report-from-excel-using-python-b882c725fcf6#id_token=eyJhbGciOiJSUzI1NiIsImtpZCI6IjU4MGFkYjBjMzJhMTc1ZDk1MGExYzE5MDFjMTgyZmMxNzM0MWRkYzQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJuYmYiOjE2NTUzMTI4MjAsImF1ZCI6IjIxNjI5NjAzNTgzNC1rMWs2cWUwNjBzMnRwMmEyamFtNGxqZGNtczAwc3R0Zy5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsInN1YiI6IjExNTYwMjM5MDEwNzA4MDU0Mjc2NyIsImVtYWlsIjoiY2Fpb2JhdGlzdGE5N0BnbWFpbC5jb20iLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiYXpwIjoiMjE2Mjk2MDM1ODM0LWsxazZxZTA2MHMydHAyYTJqYW00bGpkY21zMDBzdHRnLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwibmFtZSI6IkNhaW8gQmF0aXN0YSIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS0vQU9oMTRHaFFTVGxFajViYzJ5aEc3c3BjUU5IYlpyOHJScThrZGJiZjlGWkJhXzQ9czk2LWMiLCJnaXZlbl9uYW1lIjoiQ2FpbyIsImZhbWlseV9uYW1lIjoiQmF0aXN0YSIsImlhdCI6MTY1NTMxMzEyMCwiZXhwIjoxNjU1MzE2NzIwLCJqdGkiOiI5NDRkYzVmMGYzZDU0Y2EzNGNmOGZhNTRhZDE4NmVkZTZlOGMxNjA4In0.DooIToaNikoR_SUW9GJ4dz5dkmx8HQsrxl-YrJyMWw7IGJZRXk9iBO2E88L0XRbpZuKRs8ZKviTpgVJTVVaopuUyYyglyv4pPKtIYaKQLTb3oQ_N8Ei_J7nPRuTwackRyped5UxdlmtGKveQlgLCgviVJU_OoBhbkdk8P0AnDYRXdafHEA3Aj-2hNqIeNJ3zSgfCw4wmhm8wbo5C4OcdVW25eYvFC6eXSeV9p-L2rDXNCgEjUhAz3OSzHdSvI5MAVNBrdohFrqgcBgSr48HsPW92oNe1v6ME8KgWrPRxlysWq38YuXqgAV3XibJNNbp5ISbEh2bBv46OSI7olNVBGg
-# https://github.com/PBPatil/Python-Automation-Projects/blob/main/Automate%20PDF%20using%20Python/Excel_to_PDF_report.py
-# https://betterprogramming.pub/how-to-create-a-pdf-in-python-71fac9f7bcd6
